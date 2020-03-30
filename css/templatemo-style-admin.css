@@ -1,0 +1,665 @@
+/*
+
+Timeless Template 
+
+http://www.templatemo.com/tm-517-timeless
+
+*/
+
+body {
+    background-image: linear-gradient(black, #ff473b, #ff9409, #2d44ff);
+    color: #FFFFFF;
+    /*font-family: 'Open Sans', Helvetica, Arial, sans-serif;*/
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+h1{
+    font-weight: 300;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 38px;
+    text-shadow: 2px 2px #363636;
+    text-align: center;
+}
+h2{
+    font-weight: 300;
+    font-family: 'Abril Fatface', cursive;
+    text-shadow: 2px 2px #363636;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    font-family: 'Abril Fatface', cursive;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
+.tm-site-logo {
+    width: 40px;
+    height: 40px;
+    border: 7px solid white;
+    transform: rotate(45deg);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.tm-site-title {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    text-align: right;
+}
+
+.tm-site-header {
+    /*! padding-top: 45px; */
+    padding-bottom: 45px;
+    margin-bottom: 0;
+    padding-right: 11px;
+}
+
+.tm-font-400 {
+    font-weight: 400;
+}
+
+.tm-text-light-gray {
+    color: #CDCDCD;
+}
+
+.tm-text-gray {
+    color: #F2F2F2;
+    text-shadow: 2px 2px #363636;
+}
+
+
+
+.tm-text-white {
+    color: #FFFFFF;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 40px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}/* Twitter */
+.fa-youtube {
+    background: #ee0005;
+    color: white;
+}/* Twitter */
+
+.fa-reddit {
+    background: #ee650a;
+    color: white;
+}/* Twitter */
+
+.fa-instagram {
+    background: #06082a;
+    color: white;
+}
+
+a.tm-text-white:hover,
+a.tm-text-white:focus {
+    color: #FFFFFF;
+}
+h3.location{
+    margin-left:40px;
+    margin-bottom:.5rem
+}/*temporrary*/
+
+a.dbox-donation-button{
+    background: rgba(0, 0, 0, 0.82) url(https://d1iczxrky3cnb2.cloudfront.net/red_logo.png)
+    no-repeat 37px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Verdana,sans-serif;
+    display: inline-block;
+    font-size: 16px;
+    padding: 15px 38px;
+    padding-left: 75px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 1px #000;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.tm-text-blue {
+    color: #a8c5ff;
+}
+
+.tm-text-cyan {
+    color: #fff;
+}
+
+.tm-text-yellow {
+    color: #fff;
+}
+
+.tm-text-orange {
+    color: #fff;
+}
+
+.tm-bg-dark {
+    background-color: rgb(26, 26, 32);
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 300%;;
+}
+
+.tm-bg-dark-light {
+    background-color: #404040;
+    background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg');
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 300%;
+}
+
+hr {
+    border-color: #666666;
+    max-width: 70%;
+}
+
+.tm-video-iframe {
+    height: auto;
+}
+
+.tm-timeline-item {
+    margin-left: 70px;
+}
+
+.tm-timeline-item-inner {
+    display: flex;
+    align-items: center;
+}
+
+.tm-img-timeline {
+    width: 160px;
+    height: 160px;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.tm-timeline-connector {
+    width: 55px;
+    height: 3px;
+    background-color: #404040;
+}
+
+.tm-timeline-connector-vertical {
+    height: 60px;
+    width: 3px;
+    background-color: #404040;
+    margin-left: 260px;
+}
+
+.tm-timeline-description {
+    /*! display: inline-block; */
+    vertical-align: middle;
+    border-radius: 20px;
+    padding: 35px 40px;
+     max-width: 712px;
+    float: inherit;
+}
+
+.tm-section-mb {
+    /*! margin-bottom: 110px; */
+}
+
+.tm-section-mt {
+    /*! max-width: 500px; */
+    display: block ruby;
+}
+
+.tm-contact-form {
+    /*! max-width: 500px; */
+}
+
+.form-control {
+    border-radius: 0;
+    border-color: #666666;
+	color: #CCC;
+    background: transparent;
+    padding: 12px 15px;
+}
+
+.form-control::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #CCCCCC;
+    opacity: 1;
+    /* Firefox */
+}
+
+.form-control:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: #DDDDDD;
+}
+
+.form-control::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: #DDDDDD;
+}
+
+iframe.live-stream {
+    position: relative;
+    width: 100%;
+    height: 850px;
+    text-align: center;
+}
+
+
+iframe.map-frame{
+    position: relative;
+    width: 100%;
+    height: 400px;
+}
+iframe.artist-frame{
+    display:inline-block;
+    overflow:hidden;
+    width: 100%;
+    height: 80px;
+}
+iframe.artist-bandcamp{
+    border: 0;
+    width: 455px;
+    height: 390px;
+    padding-top: 30px;
+}
+
+a.apple-music{
+    display:block;
+    overflow:hidden;
+    background:url(https://tools.applemusic.com/en-us/lockup.svg?kind=artist&bubble=apple_music&style=standard-white) no-repeat;
+    width:158px;
+    height:45px;
+
+}div.g-ytsubscribe{
+     text-indent: 0px;
+     padding-bottom: 80px;
+     background: transparent none repeat scroll 0% 0%;
+     border-style: none;
+     float: none;
+     line-height: normal;
+     font-size: 1px;
+     vertical-align: baseline;
+     display: inline-block;
+     width: 181px;
+     height: 48px;
+}
+div.archive-concerts{
+
+}
+iframe.archive-concerts {
+    position: relative;
+    display: block;
+    width: 30%;
+    height: 300px;
+    text-align: center;
+}
+
+div.radio-container{
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 20px;
+    padding: 60px 25% 100% 25%;
+    max-width: 712px;
+}
+.under-media-info{
+    /*! display: inline-block; */
+    vertical-align: middle;
+    border-radius: 20px;
+    /* 4padding: 60px 25% 100% 25% */
+    padding-bottom: 100px;
+    z-index: 100;
+    /*! display: block ruby; */
+}
+
+
+.tm-btn-send {
+    border-radius: 0;
+    font-size: 1.1rem;
+    padding: 12px 50px;
+    background: transparent;
+    border: 1px solid #CCCCCC;
+    color: #CCCCCC;
+}
+
+.tm-btn-send:hover,
+.tm-btn-send:focus {
+    background: #CCCCCC;
+    color: #333333;
+}
+
+.form-control:focus {
+    background-color: transparent;
+    border-color: #CCCCCC;
+	color: #FFF;
+    box-shadow: 0 0 0 0.2rem #cccccc14;
+}
+.tm-media-description-wrap{
+    /*! float: right; */
+    /*! padding: 0px 1% 112px 1%; */
+}
+.tm-timeline-description-media{
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 20px;
+    padding: 11px 40px;
+    max-width: 712px;
+    float: inherit;
+}
+
+input,
+textarea,
+[contenteditable] {
+    caret-color: #FFFFFF;
+}
+
+p {
+    line-height: 1.9;
+}
+@media (min-width: 1601px) {
+    .container {
+        max-width: 1920px;
+    }
+    .tm-container-2 {
+        max-width: 1170px;
+    }
+    iframe.live-stream {
+        position: relative;
+        width: 100%;
+        height: 750px;
+        text-align: center;
+    }
+
+    iframe {
+        position: relative;
+        width: 100%;
+        height: 800px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .container {
+        max-width: 1920px;
+    }
+    .tm-container-2 {
+        max-width: 1170px;
+    }
+    iframe.live-stream {
+    position: relative;
+    width: 100%;
+    height: 750px;
+    text-align: center;
+}
+    
+    iframe {
+        position: relative;
+        width: 100%;
+        height: 750px;;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 1920px;
+    }
+    .tm-container-2 {
+        max-width: 1170px;
+    }
+    iframe.live-stream {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    text-align: center;
+}
+    
+    iframe {
+        position: relative;
+        width: 100%;
+        height: 640px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .tm-video-container {
+        max-width: 932px;
+        max-height: 466px;
+    }
+    .tm-video-text-overlay {
+        left: 60%;
+    }
+    iframe.live-stream {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    text-align: center;
+}
+    .tm-media-description-wrap{
+     /*! padding: 0px 0% 0px 60%; */
+     /*! float: right; */
+ }
+    iframe {
+        position: relative;
+        width: 100%;
+        height: 640px;
+    }
+}
+
+@media (max-width: 991px) {
+    #google-map,
+    .tm-contact-form {
+        max-width: 100%;
+    }
+    .google-map-iframe {
+        width: 100%;
+    }
+    .tm-timeline-item {
+       margin-left: 0;
+        margin-right: 0;
+    }
+    
+    iframe.live-stream {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    text-align: center;
+}
+    .tm-media-description-wrap{
+        /*! padding: 0px 0% 0px 50%; */
+        /*! float: right; */
+        float: right;
+    }
+    
+    iframe {
+        position: relative;
+        width: 100%;
+        height: 640px;
+    }
+}
+
+@media (max-width: 767px) {
+    .tm-timeline-item {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    iframe.live-stream {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    text-align: center;
+}
+    iframe {
+        position: relative;
+        width: 100%;
+        height: 640px;
+    }
+    .tm-media-description-wrap{
+        display: inline-block;
+        vertical-align: middle;
+        float: right;
+    }
+    .tm-timeline-description-media{
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 20px;
+        padding: 11px 40px;
+        max-width: 712px;
+        float: none;
+    }
+}
+
+@media (max-width: 584px) {
+    .tm-timeline-item-inner {
+        flex-direction: column;
+    }
+    .tm-timeline-connector {
+        width: 3px;
+        height: 55px;
+    }
+    .tm-timeline-connector-vertical {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    iframe.live-stream {
+    position: relative;
+    width: 100%;
+    height: 310px;
+    text-align: center;
+}
+    iframe {
+        position: relative;
+        width: 100%;
+        height: 540px;
+    }
+    .tm-media-description-wrap{
+        display: inline-block;
+        vertical-align: middle;
+        float: right;
+
+    }
+    .tm-timeline-description-media{
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 20px;
+        padding: 11px 40px;
+        max-width: 712px;
+        float: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        max-width: 540px;
+    }
+    
+    iframe.live-stream {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+}
+    iframe {
+        position: relative;
+        width: 100%;
+        height: 440px;
+    }
+
+    .tm-media-description-wrap{
+        display: inline-block;
+        vertical-align: middle;
+        align-items :center;
+        float: right;
+    }
+    .tm-timeline-description-media{
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 20px;
+        padding: 11px 40px;
+        max-width: 712px;
+        float: none;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+
+iframe.live-stream {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+
+    iframe.artist-bandcamp{
+        border: 0;
+        width: 307px;
+        height: 323px;
+        padding-top: 30px;
+    }
+    iframe {
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+
+    a.dbox-donation-button{
+        background: rgba(0, 0, 0, 0.82) url(https://d1iczxrky3cnb2.cloudfront.net/red_logo.png)
+        no-repeat 37px;
+        color: #fff;
+        text-decoration: none;
+        font-family: Verdana,sans-serif;
+        display: inline-block;
+        font-size: 14px;
+        padding: 5px 28px;
+        padding-left: 75px;
+        margin-left: 3px;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        box-shadow: 0 2px 2px 1px #000;
+        text-shadow: 0 1px rgba(0, 0, 0, 0.3);
+    }
+    .tm-media-description-wrap{
+        display: inline-block;
+        vertical-align: middle;
+        float: right;
+
+    }
+    .tm-timeline-description-media{
+        display: inline-block;
+        vertical-align: middle;
+        border-radius: 20px;
+        padding: 3px 20px;
+        max-width: 712px;
+        align-items: center;
+        float: right;
+    }
+}

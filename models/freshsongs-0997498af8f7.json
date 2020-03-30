@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "freshsongs",
+  "private_key_id": "0997498af8f72b7e8f1727d7eedf4351e8a58977",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCsXxIbqUbs3LO2\nleZoHCg8IL0x1TuudNjyLgRaeqcgEM0DNCargAjixdLl/JdWz5FGALegZjKStk9/\nLieWyV64Fy1ZWSUgklhuUY8SR43PXCQ7f1/MJpjHhrvlorlm9Xa4G0NR0L5jTYNa\nTIdkVSNvhjAzvXV2GMsSmWBUHRhngQSLmiVVPbHQF3kVKy2vTYvZgOm2+xNaea5b\nFIRTyTiLOBZAmohqBzKn4Sae3+POfqouhfnzJLq4ZwWIYo6NBRCha/zJYzr8y4pP\nHrdcwNjZ+8SqATlh5DXgIlx43Zi9rVzeyuKwQdBMFaL1WlWEv/mXlWf3YFsy5UY3\nF01k3szxAgMBAAECggEAG26C3XuWUb467IEVGrb2cUE9ksduWNB4MSyBHVwdKkV6\nNvsO92aoI1zbuCW3eQWOB0+4aXKyNDaG1sTj4IOaCx6HJUvCVJltsNrSc9SG3Tv6\n+SwHdSAkWsaWsxAvRNMmKl0OXOAlWHzevVlmB6HkAozesXFClwGRmdtmYOSDfH8g\nfowoAsJQfk77+EGZKPmpLYQx+T/THzU2xw33XzNbUvHd3wcJEh4Xenpr9B2TFgdB\nrGjXf/qdgAt5iXd2yMQbphBUmYU1AFo0Je68/KC9w0OQKiNydEvF/enpYtPqR399\nPVkI4ad/8hN0ssTylko8KO/sB9r0JKf7Rhc3rhFD5QKBgQDzqHcR5fWbOyhekIxn\nH4rybUJlgXW46saUw1HwKk/cBcjTtLlRHAYafdH+QnO2OCXsXYV6RtdA+mnYQklI\ntYHP5GFuzNHvzgiRuzDKGqMxJV1cKNqUMHUdjTCFj9oBrL66i4GdFKf5kctmFEuS\n+UiDEELHuC54u1GI1fedWUKNnQKBgQC1GjmWquNAHYW0t5lPbHM/RSvheddZfZPq\naqJJBm+1WuY3bIT6oBK9cZFgqq8lBk6i3Jr1I2x1TTqkX+O4q7h7LrK6XjA91bNX\ng+XnChLYe5k2aLODjdpsij9QqrLe5MGsfCKKRkEQBTkBqh2n/97Pyf3XcsIt+kVc\n1EWC4zRGZQKBgQCZPFml5/mOpqW80yt5r1yzGgOn0sM2iHBbHntpjzKqLPkgK4hg\nej9cacSnIyOida1j+Wz4eZTmSJZIa2erUntRQ1ADXsypA+pfvFnywM3hGp6cVxUg\nHVmKPEFHvjBc3UcWCqZ5I4SAcDB7AkiFJkF0K8XT1QFk7GlapTYUvw4cAQKBgFLy\npQfWU2mtW+0u3oBbOtny06tdQ/5QHyySFKx/zzBwZtthz/J+2LZ+SsjMxJWfsuqz\nQiIfTHDZo49gAAw4UrHQ7LmhpFTeCVt/JRDSM1mGGuGpyPbrROzL0T4gQPcILZDT\n9noAvZIZ4kdZ5GVrM2FWsfY5MKkgZR6kdwYBDJNlAoGBANxGqzJPknH6V017rCvC\nt7tGlzOwW3hLmsI3bazXFVntksTQ8VyoG3dZTLZ5WnGpbDAhYiDDqgJI91Zu6FfJ\nqPaaN2tTHUozy0TYWubIO8vllnF1QQFZ6/ldUL9JJxu4DYV3/1Mi4HVWwPYxKcuB\nSUMmxT3H8pmpYd9VHlhKmEvn\n-----END PRIVATE KEY-----\n",
+  "client_email": "jan-30@freshsongs.iam.gserviceaccount.com",
+  "client_id": "118088543486408137992",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/jan-30%40freshsongs.iam.gserviceaccount.com"
+}

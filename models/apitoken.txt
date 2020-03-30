@@ -1,0 +1,6 @@
+Application name 	fresh songs
+API key 	e4a73d4b8778799519e84ff54d541c9b
+Shared secret 	d3210913cdb13c89e01bc2923d72df27
+Registered to 	jankojanko123
+
+http://ws.audioscrobbler.com/2.0/?method=album.search&album=believe&api_key=e4a73d4b8778799519e84ff54d541c9b&format=json
