@@ -15,13 +15,16 @@
     <!-- load CSS -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap">
     <!-- Google web font "Open Sans" -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min-admin.css">
     <!-- https://getbootstrap.com/ -->
-    <link rel="stylesheet" href="../css/templatemo-style.css">
+    <link rel="stylesheet" href="../css/templatemo-style-admin.css">
 
     <link rel="stylesheet" href="../css/navbar.css">
     <!-- yt button style -->
     <script src="https://apis.google.com/js/platform.js"></script>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+
 
 </head>
 <body>
@@ -67,41 +70,16 @@
         </div>
     </div>
     <div class="row">
-        <div id="twitch-embed" class="live-stream"></div>
-        <!-- Load the Twitch embed script -->
-        <script src="https://embed.twitch.tv/embed/v1.js"></script>
-        <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-        <script type="text/javascript">
 
-            var id = "<?php echo $id; ?>";
-            var type = "<?php echo $type; ?>";
-
-            if (type === 'stream') {
-                new Twitch.Embed("twitch-embed", {
-                    width: "100%",
-                    height: "100%",
-                    channel: id,
-                    theme: "dark",
-                    allowfullscreen: "true",
-                    layout: "video"
-                });
-            } else if (type === 'video') {
-                new Twitch.Embed("twitch-embed", {
-                    width: "100%",
-                    height: "100%",
-                    video: id,
-                    theme: "dark",
-                    allowfullscreen: "true",
-                    layout: "video"
-                });
-            }
-            embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
-                var player = embed.getPlayer();
-                player.play();
-                player.setVolume(0.5);
-
-            });
-        </script>
+        <?php
+        if ($service == 'twich') {
+            echo '<div id="twitch-embed" class="live-stream"></div>
+            <script src="https://embed.twitch.tv/embed/v1.js"></script>';
+        } elseif ($service == 'youtube') {
+            echo '<div id="youtube-embed" class="live-stream"></div>';
+        }
+        ?>
+        <hr>
     </div>
     <div class="under-media-info">
         <div class="row tm-section-mb tm-section-mt">
@@ -127,7 +105,7 @@
         </div>
     </div>
 
-
+</div>
     <div class="container tm-container-2">
         <div class="row">
             <div class="row tm-section-mb">
@@ -185,7 +163,6 @@
                                     //}
                                     ?>
                                     <script>
-
                                         function locsetter() {
                                             $.ajax({
                                                 method: "POST",
@@ -195,7 +172,6 @@
                                                 $(".head h3").html(data);
                                             });
                                         }
-
                                         setInterval(function () {
                                             locsetter()
                                         }, 5000);
@@ -227,9 +203,7 @@
 
                     <div class="tm-timeline-item">
                         <div class="tm-timeline-item-inner">
-                            <a href="https://www.youtube.com/watch?v=n3nPiBai66M&list=PLzVlnTZP79ikM7mDy4MdfMuZmSi5z6KOP">
-                                <img src="../img/img-04.jpg" alt="Image" class="rounded-circle tm-img-timeline">
-                            </a>
+                            <img src="../img/img-04.jpg" alt="Image" class="rounded-circle tm-img-timeline">
                             <div class="tm-timeline-connector">
                                 <p class="mb-0">&nbsp;</p>
                             </div>
@@ -239,20 +213,23 @@
 
 
                                     <?php
-                                    $artistId = 'spotify:artist:3Sz7ZnJQBIHsXLUSo0OQtM?si=rtXdl66rQfuYjo_iIEGLNw';
-                                    $artistYtName = "MacDemarco";
-                                    $artistAppleName = 'mac-demarco';
+                                    $artistId = $artistid_spotify;
+                                    $artistYtName = $artistname_yt;
+                                    $artistAppleName = $artistname_apple;
+                                    $artistBandCamp = $artisturl_bandcamp;
+                                    $artistHomePage = $artisturl_homepage;
 
                                     echo '   
                                   <iframe src="https://open.spotify.com/follow/1/?uri=' . $artistId . '&size=detail&theme=dark"
                                     class = "artist-frame" width="300" height="56" scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="true"></iframe>
                                     <br>
-                                  <a href="https://geo.music.apple.com/us/artist/' . $artistAppleName . '/501437762?mt=1&app=music" class="apple-music"></a>    
+                                  <a href="https://geo.music.apple.com/us/artist/' . $artistAppleName . '?mt=1&app=music" class="apple-music"></a>    
                                     <br>
                                  <div class="g-ytsubscribe" data-channel="' . $artistYtName . '" data-theme="dark" data-layout="full" data-count="default"></div>
                                     <br>
-                                 <iframe class="artist-bandcamp" src="https://bandcamp.com/VideoEmbed?track=1197095466&bgcol=ffffff&linkcol=0f91ff" frameborder="0" mozallowfullscreen="1" webkitallowfullscreen="1" allowfullscreen="1" ></iframe>
-                                 
+                                 <iframe class="artist-bandcamp" src="' . $artistBandCamp . '" frameborder="0" mozallowfullscreen="1" webkitallowfullscreen="1" allowfullscreen="1" ></iframe>
+                                 <hr>
+                                 <a href="' . $artistHomePage . '">Artist home page</a>
                                  ';
                                     ?>
                                 </div>
@@ -268,11 +245,73 @@
             <script src="../js/jquery.min.js"></script>
             <script src="../js/templatemo-script.js"></script>
             <script src="../js/navbar.js"></script>
-
 </body>
 <footer>
     <p> stay safe </p>
 </footer>
 
+<script type="text/javascript">
+
+    var id = "<?php echo $id; ?>";
+    var type = "<?php echo $type; ?>";
+
+    if (type === 'stream') {
+        new Twitch.Embed("twitch-embed", {
+            width: "100%",
+            height: "100%",
+            channel: id,
+            theme: "dark",
+            allowfullscreen: "true",
+            layout: "video"
+        });
+    } else if (type === 'video') {
+        new Twitch.Embed("twitch-embed", {
+            width: "100%",
+            height: "100%",
+            video: id,
+            theme: "dark",
+            allowfullscreen: "true",
+            layout: "video"
+        });
+    }
+    embed.addEventListener(Twitch.Embed.VIDEO_READY, () => {
+        var player = embed.getPlayer();
+        player.play();
+        player.setVolume(0.5);
+
+    });
+</script>
+<script>
+    var player;
+    var id = "<?php echo $id; ?>";
+
+    function onYouTubeIframeAPIReady() {
+        player = new YT.Player('youtube-embed', {
+            videoId: id,
+            autoplay: 0,
+            events: {
+                onReady: initialize
+            }
+        });
+    }
+    function initialize(){
+
+        // Update the controls on load
+        updateTimerDisplay();
+        updateProgressBar();
+
+        // Clear any old interval.
+        clearInterval(time_update_interval);
+
+        // Start interval to update elapsed time display and
+        // the elapsed part of the progress bar every second.
+        time_update_interval = setInterval(function () {
+            updateTimerDisplay();
+            updateProgressBar();
+        }, 1000)
+
+    }
+
+</script>
 
 </html>

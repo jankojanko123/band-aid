@@ -28,7 +28,6 @@
     <script src="https://apis.google.com/js/platform.js"></script>
 
 
-
 </head>
 <body>
 <!--nav -->
@@ -68,32 +67,37 @@
         </header>
     </div>
     <div class="archive-concerts">
-        <?php
-        $ytId = 'tjlrpehzL4w';
-        $twichId = 'bobross';
 
-        $resp = getTwichArcivedStreams($twichId);
+            <?php
+            $ytId = 'tjlrpehzL4w';
+            $twichId = 'bobross';
 
-        foreach ($resp->data as $key => $items) {
-            echo '<iframe src="https://player.twitch.tv/?video=' . $items->id . '" class="archive-concerts" frameborder="0" allowfullscreen="true" scrolling="no" autoplay="false"></iframe>';
-            echo '<h4>'. $items->title .'</h4>';
-            echo '<h5>'. $items->published_at .'</h5>';
-        }
-        ?>
+            $resp = getTwichArcivedStreams($twichId);
 
+            foreach ($resp->data as $key => $items) {
+                echo '       
+                <div class="tm-bg-dark tm-archive-videos">
+            <iframe src="https://player.twitch.tv/?video=' . $items->id . '" class="archive-concerts" frameborder="0" autoplay="0" allowfullscreen="true" scrolling="no"></iframe>
+
+            <h3 class="tm-text-blue tm-font-400">' . $items->title . '</h3>
+            <p>' . $items->published_at . '</p>
+            
+            </div>
+            ';
+            }
+            ?>
 
     </div>
-</div>
 
-<hr>
-<a href="/public/contact.php">ContactUs</a>
+    <hr>
+    <a href="/public/contact.php">ContactUs</a>
 
-<!-- .container -->
+    <!-- .container -->
 
-<script src="../js/jquery.min.js"></script>
-<!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
-<script src="../js/templatemo-script.js"></script>
-<script src="../js/navbar.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="../js/templatemo-script.js"></script>
+    <script src="../js/navbar.js"></script>
 
 </body>
 </html>

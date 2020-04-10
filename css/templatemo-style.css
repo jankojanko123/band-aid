@@ -222,13 +222,25 @@ hr {
 }
 
 .tm-timeline-description {
+      /*! display: inline-block; */
+      vertical-align: middle;
+      border-radius: 20px;
+      padding: 35px 40px;
+      /* max-width: 712px; */
+      float: inherit;
+  }
+
+.tm-archive-videos {
     /*! display: inline-block; */
     vertical-align: middle;
     border-radius: 20px;
     padding: 35px 40px;
     /* max-width: 712px; */
-     float: inherit;
- }
+    float: inherit;
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
  .tm-section-mb {
      /*! margin-bottom: 110px; */
@@ -315,14 +327,18 @@ a.apple-music{
      height: 48px;
 }
 div.archive-concerts{
-
+    position: relative;
+    /*! display: block; */
+    width: 100%;
+    height: 300px;
+    /*! text-align: center; */
 }
 iframe.archive-concerts {
     position: relative;
-    display: block;
-    width: 30%;
+    /*! display: block; */
+    width: 100%;
     height: 300px;
-    text-align: center;
+    /*! text-align: center; */
 }
 
 div.radio-container{

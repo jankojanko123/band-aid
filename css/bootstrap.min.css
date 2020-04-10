@@ -44,8 +44,14 @@
  box-sizing:border-box;
  /*! margin-left: 10px; */
  width: 100%;
-;
+
 }
+}#youtube-embed{
+  box-sizing:border-box;
+  /*! margin-left: 10px; */
+  width: 100%;
+
+ }
 html {
  font-family:sans-serif;
  line-height:1.15;
